@@ -25,4 +25,4 @@ const api = {
 };
 
 export { api };
-export type { HealthResponse, User } from "./types.ts";
+export type { HealthResponse, User, ApiError } from "./types.ts";

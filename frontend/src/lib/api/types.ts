@@ -10,4 +10,9 @@ type User = {
   email: string;
 };
 
+export type ApiError = {
+  message: string;
+  status?: number;
+};
+
 export type { HealthResponse, User };

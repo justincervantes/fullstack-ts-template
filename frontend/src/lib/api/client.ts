@@ -1,9 +1,5 @@
 import axios from "axios";
-
-type ApiError = {
-  message: string;
-  status?: number;
-};
+import { type ApiError } from "./types";
 
 const apiClient = axios.create({
   baseURL: "http://localhost:3001",
@@ -35,4 +31,3 @@ function toApiError(error: unknown): ApiError {
 }
 
 export { apiClient, toApiError };
-export type { ApiError };
