@@ -6,11 +6,6 @@ const apiClient = axios.create({
   timeout: 10000,
 });
 
-apiClient.interceptors.response.use(
-  (response) => response,
-  (error: unknown) => Promise.reject(error),
-);
-
 function toApiError(error: unknown): ApiError {
   if (axios.isAxiosError<{ error?: string }>(error)) {
     return {
