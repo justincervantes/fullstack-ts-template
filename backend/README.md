@@ -1,6 +1,6 @@
 # Backend Starter
 
-Simple Node.js + Express + PostgreSQL starter for a live coding interview.
+Simple Node.js + Express + PostgreSQL starter for a live coding exercise.
 
 ## Stack
 
@@ -109,8 +109,3 @@ curl -X POST http://localhost:3001/users \
   -H "Content-Type: application/json" \
   -d '{"name":"Dana White","email":"dana@example.com"}'
 ```
-
-## Notes
-
-- This repo currently covers the backend and local database plumbing.
-- For the interview brief you pasted, you still need a minimal React frontend that can make a GET request to this API.
