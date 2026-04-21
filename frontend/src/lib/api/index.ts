@@ -1,4 +1,4 @@
-import { apiClient } from "./client.ts";
+import { apiClient, toApiError } from "./client.ts";
 import type { HealthResponse, User } from "./types.ts";
 
 const api = {
@@ -11,6 +11,17 @@ const api = {
     const response = await apiClient.get<User[]>("/users");
     return response.data;
   },
+
+  async createUser(user: { name: string; email: string }): Promise<{
+    id: number;
+    name: string;
+    email: string;
+  }> {
+    const result = await apiClient.post<User>("/users", user);
+    return result.data;
+  },
+
+  toApiError,
 };
 
 export { api };
