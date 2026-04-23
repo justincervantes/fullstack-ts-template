@@ -3,6 +3,10 @@ function NewRoutePage() {
     <div className="mt-12 flex items-center justify-center">
       <form className="w-full max-w-md space-y-4 rounded-lg bg-white p-6 shadow">
         <div>
+          <h2 className="text-xl font-semibold text-gray-900">Sample Form</h2>
+        </div>
+
+        <div>
           <label
             htmlFor="field"
             className="mb-1 block text-sm font-medium text-gray-700"
